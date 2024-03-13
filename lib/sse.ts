@@ -181,7 +181,7 @@ export class SSE {
            return;
        }
 
-       if (this.xhr.status !== 200) {
+       if (this.xhr.status >= 400) {
            this._onStreamFailure(e);
            return;
        }
